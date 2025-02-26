@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import Perfil from "./components/Perfil";
 import Formulario from "./components/Formulario";
-import reposlist from "./components/reposlist";
+import ReposList from "./components/ReposList";
 
 function App() {
 
@@ -18,7 +18,7 @@ function App() {
     {nomeUsuario.length > 4 && (  
       <> 
         <Perfil nomeUsuario={nomeUsuario} />
-        <reposlist nomeUsuario={nomeUsuario} />
+        <ReposList nomeUsuario={nomeUsuario} />
       </>
     )}
 
