@@ -18,7 +18,7 @@ function App() {
     {nomeUsuario.length > 4 && (  
       <> 
         <Perfil nomeUsuario={nomeUsuario} />
-        <ReposList nomeUsuario={nomeUsuario} />
+        <reposlist nomeUsuario={nomeUsuario} />
       </>
     )}
 
