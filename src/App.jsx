@@ -4,6 +4,7 @@ import Perfil from "./components/Perfil";
 import Formulario from "./components/Formulario";
 import ReposList from "./components/ReposList";
 
+
 function App() {
 
   const [formularioEstaVisivel, setFormularioEstaVisivel] = useState(true) ;
@@ -13,7 +14,9 @@ function App() {
 
   return (
     <>
-  <input type="text" onBlur={(e) => setNomeUsuario(e.target.value)}/>
+    <div className="container">
+      <input className="digiteAqui" type="text" onBlur={(e) => setNomeUsuario(e.target.value)} placeholder="Digite seu usuário GitHub:"/>
+    </div>
 
     {nomeUsuario.length > 4 && (  
       <> 

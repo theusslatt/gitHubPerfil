@@ -15,7 +15,7 @@ const ReposList = ({ nomeUsuario }) => {
                     setEstaCarregando(false)
                     setRepos(resJson);
                 }, 3000);
-            });
+            })
     }, [nomeUsuario]);
     return (
         <div className="container">
